@@ -16,7 +16,7 @@
   "devDependencies": {},
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "NODE_ENV=production node index.js"
+    "build": "NODE_ENV=production node index.js"
   },
   "keywords": [
     "node",

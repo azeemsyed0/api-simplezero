@@ -4,6 +4,7 @@
       "username": "postgres",
       "password": "password",
       "host": "localhost",
-      "dialect": "postgres"
-  }
+      "dialect": "postgres"      
+  },
+  "client": "http://localhost:4200"
 }
