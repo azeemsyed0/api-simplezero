@@ -1,8 +1,11 @@
 const Sequelize = require('sequelize');
+const config = require('config');
 
-const sequelize = new Sequelize('dcaqe63ohtvhsa','uoqqksjwdzzrhl', 'db123e489057e7099beeeab692e3af95e21c2a2e0e373d607dcb8d6d2cabe155', {
-  host: 'ec2-54-83-17-151.compute-1.amazonaws.com',
-  dialect: 'postgres',
+const db = config.get('dbConfig');
+
+const sequelize = new Sequelize(db.dbName,db.username, db.password, {
+  host: db.host,
+  dialect: db.dialect,
   operatorsAliases: false 
 });
 sequelize.sync({

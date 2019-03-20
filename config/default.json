@@ -1,0 +1,9 @@
+{
+  "dbConfig": {
+      "dbName": "simple-0-dev-db",
+      "username": "postgres",
+      "password": "password",
+      "host": "localhost",
+      "dialect": "postgres"
+  }
+}
